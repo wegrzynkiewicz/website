@@ -5,7 +5,7 @@
 
 html {
     height: 100vh;
-    background-color: #000;
+    background-color: #111;
     color: #fff;
 }
 
@@ -16,6 +16,11 @@ body {
 
 h1 {
     font-weight: normal;
+    margin: 1.3em 0;
+}
+
+p {
+    margin: 1.3em 0;
 }
 
 .container {
@@ -40,7 +45,7 @@ h1 {
     display: block;
     height: 15px;
     width: 9px;
-    margin-top: 1rem;
+    margin-top: 1.3em;
 }
 
 @keyframes blink {
