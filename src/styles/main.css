@@ -1,3 +1,56 @@
-#top{
-    background-color: red;
+* {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+html {
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    min-width: 240px;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.container {
+    margin: 10vh auto 0 auto;
+    padding: 10px;
+}
+
+.user {
+    color: #8ae134;
+    font-weight: bold;
+}
+
+.path {
+    color: #6e9dcf;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cursor {
+    animation: blink 1s steps(2, start) infinite;
+    background-color: #fff;
+    display: block;
+    height: 15px;
+    width: 9px;
+    margin-top: 1rem;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 600px;
+    }
 }
