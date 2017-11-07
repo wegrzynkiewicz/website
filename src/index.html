@@ -14,15 +14,43 @@
     <meta property="og:url" content="https://wegrzynkiewicz.pl">
     <meta property="og:image" content="https://wegrzynkiewicz.pl/assets/graph.jpg">
     <meta property="og:image:secure_url" content="https://wegrzynkiewicz.pl/assets/graph.jpg">
-    <meta property="og:description" content="Zwykła strona wizytówka zwykłego programisty autorstwa Łukasza Węgrzynkiewicz">
+    <meta property="og:description"
+          content="Zwykła strona wizytówka zwykłego programisty autorstwa Łukasza Węgrzynkiewicz">
     <meta property="og:locale" content="pl_PL"/>
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext">
     <link rel="stylesheet" href="/styles.css" inline>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WQWNQWJ');</script>
+    <!-- End Google Tag Manager -->
+
 </head>
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQWNQWJ"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div class="container">
     <p>
         <code>
@@ -57,9 +85,9 @@
         <a class="path" target="_blank" href="https://www.linkedin.com/in/wegrzynkiewicz-lukasz">LinkedIn</a> -
         <a class="path" target="_blank" href="https://www.goldenline.pl/lukasz-wegrzynkiewicz/">GoldenLine</a> -
         <a class="path" target="_blank" href="https://twitter.com/wegrzynkiewicz">Twitter</a> -
+        <a class="path" target="_blank" href="" id="email">E-mail</a>
         <script>
-            var email = window.atob('bHVrYXN6QHdlZ3J6eW5raWV3aWN6LnBs');
-            document.write(' <a class="path" target="_blank" href="mailto:' + email + '">E-mail</a>');
+            document.getElementById('email').setAttribute('href', 'mailto:' + window.atob('bHVrYXN6QHdlZ3J6eW5raWV3aWN6LnBs'));
         </script>
     </nav>
     <span class="cursor"></span>
